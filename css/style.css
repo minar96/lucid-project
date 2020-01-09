@@ -1,0 +1,570 @@
+/*global css start*/
+*{
+	margin: 0;
+    padding: 0;
+    font-family: 'Source Serif Pro', serif;
+}
+.container{
+    width: 1140px;
+    margin: 0 auto;
+}
+.container-fluid{
+	width: 100%;
+}
+.row{
+	width: 100%;
+}
+.col-1{
+	width: 8.33%; 
+	float:left;
+}
+.col-2{
+	width: 16.67%; 
+	float:left;
+}
+.col-3{
+	width: 25%; 
+	float:left;
+}
+.col-4{
+	width: 33.33%; 
+	float:left;
+}
+.col-5{
+	width: 41.66%; 
+	float:left;
+}
+.col-6{
+	width: 50%; 
+	float:left;
+}
+.col-7{
+	width: 58.33%; 
+	float:left;
+}
+.col-8{
+	width: 66.67%; 
+	float:left;
+}
+.col-9{
+	width: 75%; 
+	float:left;
+}
+.col-10{
+	width: 83.33%; 
+	float:left;
+}
+.col-11{
+	width: 91.66%; 
+	float:left;
+}
+.col-12{
+	width: 100%; 
+	float:left;
+}
+.text-center{
+	text-align: center;
+}
+
+section{
+	width:100%;
+	float: left;
+}
+.blue{
+	color: #6bb0e1;
+}
+.img-fluid{
+	width: 100%;
+}
+/*global css end
+
+/*banner section css start*/
+.banner{background: url(../image/banner-bg.png);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 600px;
+	overflow: hidden;
+}
+.banner .logo{
+	margin: 20px 0;
+}
+.banner .navbar{}
+.banner .navbar .nav-menu{
+    float: right;
+    padding: 20px 20px;
+}
+.banner .navbar .nav-menu .nav-item{
+    list-style: none;
+    display: inline-block;
+    padding: 10px 20px;
+   	position: relative;
+}
+.banner .navbar .nav-menu .nav-item .nav-link{
+    text-decoration: none;
+    color: white;
+}
+.banner .navbar .nav-menu .nav-item::after {
+    content: "";
+    position: absolute;
+    background: #00BCD4;
+    width: 0%;
+    height: 2px;
+    left: 0;
+    bottom: 0;
+}
+.banner .navbar .nav-menu .nav-item::before {
+    content: "";
+    position: absolute;
+    background: #00BCD4;
+    width: 0%;
+    height: 2px;
+    right:  0;
+    bottom: 0;
+}
+.banner .navbar .nav-menu .nav-item:hover::after {
+width: 50%;
+transition : 0.5s linear;
+}
+.banner .navbar .nav-menu .nav-item:hover::before {
+width: 50%;
+transition : 0.5s linear;
+}
+.banner .hero-area{
+	    margin-top: 86px;
+}
+.banner .hero-area h6{
+    text-transform: uppercase;
+    font-size: 15px;
+    margin-bottom: 15px;
+    letter-spacing: 3px;
+}
+.banner .hero-area h1{
+    color: white;
+    font-size: 49px;
+    margin-bottom: 10px;
+}
+.banner .hero-area p{
+    color: #999;
+    line-height: 1.6;
+    margin-bottom: 34px;
+}
+.banner .hero-area .btn{
+    color: white;
+    text-decoration: none;
+    padding: 18px 30px;
+    margin: 12px;
+    border: 1px solid #999;
+    border-radius: 9px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+}
+.banner .hero-area .btn-ctn{
+    background: #008ed6;
+    border: 1px solid #008ed6;
+}
+.banner .hero-area .btn-ghost{}
+.banner .hero-area .btn:hover{
+		background: #004984;
+		border: 1px solid #004984;
+		transition: 0.5s linear;
+}
+.banner .img-fluid{
+    width: 75%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+/*banner section css end*/
+
+/*feature section css start*/
+.feature{
+	height: 600px;
+	border-bottom: 1px solid #9999995c;
+
+}
+.feature .space{
+    line-height: 1.7;
+}
+.feature h6{
+	margin-top: 50px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-size: 15px;
+}
+.feature h2{
+    font-size: 40px;
+    color: #1a1a1a;
+}
+.feature .line{}
+.feature .feature-box{
+    margin-top: 60px;
+    height: 230px;
+    width: 268px;
+    margin-right: 5px;
+    padding: 20px 0;
+    box-shadow: 0 0 2px 2px rgba(0,0,0,0.30);
+    border-radius: 5px;
+}
+.feature .feature-img-box{
+    border: 1px solid #999999bf;
+    width: 60px;
+    height: 60px;
+    line-height: 76px;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+
+    /*box-sizing: border-box;*/
+}
+.feature .feature-img-box .feature-img{}
+.feature h3{
+    font-size: 24px;
+}
+.feature p{
+    color: #999;
+    font-size: 18px;
+}
+.feature .feature-box:hover{
+	margin-top: 10px;
+	background: #80808029;
+	transition: 1s linear;
+}
+/*feature section css end*/
+
+/*About section css start*/
+.about{
+	margin-top: 75px;
+}
+.about .highlight{
+    line-height: 1.7;
+}
+.about .highlight h6{
+	text-transform: uppercase;
+    font-size: 15px;
+    letter-spacing: 3px;
+    font-weight: 700;
+}
+.about .highlight h2{
+    font-size: 40px;
+}
+.about .highlight p{
+	color: #999;
+	font-size: 18px;
+	line-height: 1.7;
+}
+.about .highlight ul{
+    margin-top: 30px;
+}
+.about .highlight ul li{
+    list-style: none;
+    color: #1b1b1b;
+    font-size: 18px;
+    margin: 0 8px;
+}
+.about .highlight ul li p {
+    display: inline-block;
+    padding: 0 5px;
+    font-size: 21px;
+}
+/*About section css end*/
+
+/*About-2 section css start*/
+.about-2{}
+.about-2 .highlight{
+    line-height: 1.7;
+    margin-top: 142px;
+}
+.about-2 .highlight h6{
+	text-transform: uppercase;
+    font-size: 15px;
+    letter-spacing: 3px;
+    font-weight: 700;
+}
+.about-2 .highlight h2{
+    font-size: 40px;
+}
+.about-2 .highlight p{
+	color: #999;
+	font-size: 18px;
+	line-height: 1.7;
+}
+/*About-2 section css end*/
+
+/*Review section css start*/
+.review{
+	background: url(../image/bg.png);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 600px;
+}
+.review .highlight{
+    line-height: 1.7;
+    margin-top: 50px;
+    text-align: center;
+}
+.review .highlight h6{
+	text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 3px;
+    
+}
+.review .highlight h2{
+    font-size: 36px;
+    color: white;
+}
+
+.my-carousel{
+	margin-top: 60px;
+}
+.item{
+    color: white;
+}
+.item p{
+    font-size: 20px;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+.item h5{
+    font-size: 22px;
+    margin-left: 10px;
+}
+.item h6{
+    font-size: 16px;
+    margin-left: 10px;
+}
+.owl-carousel .owl-dots.disabled{
+    display: block;
+}
+.owl-theme .owl-dots .owl-dot span{
+	background: #fff;
+}
+.owl-theme .owl-dots .owl-dot.active span {
+	background: #00bcd4;
+	width: 20px;
+	height: 20px;
+}
+.owl-theme .owl-nav.disabled+.owl-dots {
+    margin-top: 160px;
+}
+
+/*Review section css end*/
+
+/*level section css start*/
+.level{
+	background:#15141a;
+	height: 160px;
+}
+.level h2{
+	color: white;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 81px;
+}
+.level h2 span{
+	color: #999;
+}
+.level .hero-area{
+	margin-top: 12%;
+    float: right;
+}
+.level .hero-area .btn{
+    color: white;
+    text-decoration: none;
+    padding: 18px 30px;
+    margin: 12px;
+    border: 1px solid #999;
+    border-radius: 9px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+}
+.level .hero-area .btn-ctn{
+    background: #008ed6;
+    border: 1px solid #008ed6;
+}
+.level .hero-area .btn-ghost{}
+.level .hero-area .btn:hover{
+		background: #004984;
+		border: 1px solid #004984;
+		transition: 0.5s linear;
+}
+/*level section css end*/
+
+/*pricing section css start*/
+.price{
+	height: 760px;
+}
+.price .highlight{
+    line-height: 1.7;
+    margin-top: 60px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+.price .highlight h6{
+	text-transform: uppercase;
+    font-size: 15px;
+    letter-spacing: 3px;
+    font-weight: 700;
+}
+.price .highlight h2{
+    font-size: 40px;
+}
+.price .full-box{
+	border: 1px solid #99999991;
+    padding: 20px 0;
+    box-sizing: border-box;
+    margin-right: 35px;
+    width: 248px;
+}
+.price .full-box .box-1{
+	font-size: 24px;
+    font-weight: 700;
+    height: 40px;
+    border-bottom: 1px solid #99999991;
+}
+.price .full-box .box-2 h3{
+	font-size: 60px;
+    border-bottom: 1px solid #99999991;
+    padding: 40px 0;
+}
+.price .full-box .box-2 h3 sup{
+	font-size: 48px;
+}
+.price .full-box  .box-3{
+	font-size: 18px;
+    color: #99999991;
+    padding: 33px 0;
+    margin-bottom: 20px;
+}
+.price .full-box .box-3 span{
+	color: #008ed6;
+}
+.price .full-box .box-4{
+	margin-bottom: 20px;
+}
+.price .full-box .box-4 .btn{
+	text-decoration: none;
+    border: 1px solid #99999991;
+    padding: 15px 36px;
+    border-radius: 5px;
+    color: #008ed6;
+    font-weight: 700;
+}
+.price .full-box .btn:hover{
+	background: #008ed6;
+	color: white;
+	transition: 0.5 linear;
+}
+
+/*pricing section css end*/
+
+/*contact section css start*/
+.contact{
+	background: #ededed;
+    height: 600px;
+    position: relative;
+}
+.contact .highlight{
+    line-height: 1.7;
+    margin-top: 60px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.contact .highlight h6{
+	text-transform: uppercase;
+    font-size: 15px;
+    letter-spacing: 3px;
+    font-weight: 700;
+}
+.contact .highlight h2{
+    font-size: 40px;
+}
+.contact .box-1{
+	line-height: 1.7;
+    color: #999;
+    font-size: 18px;
+}
+.contact .box-1 p{}
+.contact .form{
+	background: #15141a;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 34px 40px;
+}
+
+.contact .form .login{
+	padding: 15px;
+    width: 80%;
+    margin: 10px;
+    color: white;
+    background: transparent;
+    border: 1px solid #999;
+}
+
+.contact .form  .message{
+	width: 75%;
+    background: transparent;
+    border: 1px solid #999;
+    margin-top: 10px;
+    border-radius: 3px;
+    color: white;
+    padding: 11px 35px;
+}
+
+.contact .form .button{
+	padding: 12px 20px;
+    text-transform: uppercase;
+    background: #9e9e9ea3;
+    border: 1px solid #9e9e9ea3;
+    border-radius: 3px;
+    font-weight: 700;
+    color: white;
+    float: right;
+    margin-top: 20px;
+    position: relative;
+}
+.contact .form .button:hover{
+	background: #008ed6;
+	border: 1px solid #008ed6;
+	transition: 0.5s linear;
+}
+/*contact section css end*/
+
+/*Google Map Intregretion section css start*/
+.map iframe{
+	display: block !important;
+}
+/*Google Map Intregretion section css end*/
+
+/*footer section css start*/
+.footer{
+	height: 120px;
+	background: #15141a;
+}
+.footer ul{
+	text-align: center;
+    margin-top: 40px;
+}
+.footer ul li{
+	list-style: none;
+    display: inline-block;
+    padding: 0 5px;
+}
+.footer ul li .fa{
+	color: #999;
+}
+.footer p{
+	text-align: center;
+    color: #2e2d32;
+    /* letter-spacing: 1.5px; */
+    margin-top: 15px;
+}
+.footer ul li .fa:hover{
+	color: #008ed6;
+}
+/*footer section css end*/
